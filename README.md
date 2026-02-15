@@ -10,6 +10,13 @@ The dashboard provides interactive visualizations to support data-driven busines
 
 ---
 
+## 📥 How to View
+
+- Download the `.pbix` file and open using **Power BI Desktop**.  
+- Interactive visuals and slicers are available across 4 dashboard pages.
+
+---
+
 ## 🎯 Business Objectives
 
 - Analyze overall customer retention and churn rate
