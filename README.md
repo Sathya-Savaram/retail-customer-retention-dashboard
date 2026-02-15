@@ -2,16 +2,16 @@
 
 ## 📌 Project Overview
 
-This project analyzes retail customer behavior to identify churn patterns, retention trends, loyalty impact, and Customer Lifetime Value (CLV) insights using Power BI.
+This project analyzes retail customer data to identify churn patterns, retention trends, loyalty impact, and Customer Lifetime Value (CLV) insights using Power BI.
 
-The dashboard provides interactive visualizations to support data-driven business decisions focused on improving customer retention and operational performance.
+The objective is to generate actionable business insights that support customer retention strategies and improve operational decision-making.
 
 ---
 
 ## 🛠 Tools & Technologies
 
-- Power BI  
-- Power Query  
+- Microsoft Power BI  
+- Power Query (Data Transformation)  
 - DAX (Data Analysis Expressions)  
 - Data Modeling  
 
@@ -19,17 +19,17 @@ The dashboard provides interactive visualizations to support data-driven busines
 
 ## 🗂 Dataset Description
 
-The dataset was provided in CSV format and imported into Power BI for transformation and modeling.
+The dataset was provided in CSV format and imported into Power BI for transformation and analysis.
 
 The dataset includes:
 
-- Customer_Demographics  
-- Customer_Transactions  
-- Loyalty_Program  
-- Store_Locations  
-- Churn_Labelled_Customers  
+- Customer_Demographics.csv  
+- Customer_Transactions.csv  
+- Loyalty_Program.csv  
+- Store_Locations.csv  
+- Churn_Labelled_Customers.csv  
 
-Data was cleaned and transformed using Power Query.  
+Data cleaning and transformation were performed using Power Query.  
 Relationships were established between tables to enable cross-table analysis.
 
 ---
@@ -45,7 +45,7 @@ Relationships were established between tables to enable cross-table analysis.
 - Calculated Repeat Rate and Churn Rate  
 - Analyzed churn by region, loyalty tier, income level, and sales channel  
 
-### 3️⃣ Loyalty & Promotion Impact
+### 3️⃣ Loyalty & Promotion Insights
 - Measured % Transactions with Promotion  
 - Compared average purchase behavior (with vs without promotion)  
 - Evaluated loyalty tier purchase frequency  
@@ -80,11 +80,17 @@ retail-customer-retention-dashboard/
 │
 ├── Retail_Customer_Retention_Dashboard.pbix
 ├── data/
-│   ├── customer_transactions.csv
-│   ├── customer_demographics.csv
-│   ├── loyalty_program.csv
-│   ├── store_locations.csv
-│   └── churn_labelled_customers.csv
+│   ├── Customer_Demographics.csv
+│   ├── Customer_Transactions.csv
+│   ├── Loyalty_Program.csv
+│   ├── Store_Locations.csv
+│   └── Churn_Labelled_Customers.csv
+│
+├── screenshots/
+│   ├── executive_overview.png
+│   ├── loyalty_promotion_insights.png
+│   ├── store_channel_performance.png
+│   └── customer_segmentation.png
 │
 └── README.md
 ```
