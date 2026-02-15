@@ -1,75 +1,133 @@
-# Retail Customer Retention – Power BI Dashboard
+# 📊 Retail Customer Retention — Power BI Dashboard
+
+---
 
 ## 📌 Project Overview
 
-This project analyzes retail customer data to identify churn patterns, retention trends, loyalty impact, and Customer Lifetime Value (CLV) insights using Power BI.
+This project analyzes retail customer behavior to identify churn patterns, retention trends, loyalty impact, and Customer Lifetime Value (CLV) insights using **Power BI**.
 
-The objective is to generate actionable business insights that support customer retention strategies and improve operational decision-making.
+The dashboard provides interactive visualizations to support data-driven business decisions focused on improving customer retention and operational performance.
+
+---
+
+## 🎯 Business Objectives
+
+- Analyze overall customer retention and churn rate
+- Identify high-risk churn segments
+- Evaluate loyalty program performance
+- Compare store and channel performance
+- Segment customers based on CLV
+- Provide actionable business insights
 
 ---
 
 ## 🛠 Tools & Technologies
 
-- Microsoft Power BI  
-- Power Query (Data Transformation)  
-- DAX (Data Analysis Expressions)  
-- Data Modeling  
+- **Power BI**
+- **Power Query (Data Transformation)**
+- **DAX (Data Analysis Expressions)**
+- **CSV Dataset**
 
 ---
 
-## 🗂 Dataset Description
+## 📂 Dataset Information
 
-The dataset was provided in CSV format and imported into Power BI for transformation and analysis.
+The dataset consists of 5 CSV files:
 
-The dataset includes:
+- `Customer_Demographics.csv`
+- `Customer_Transactions.csv`
+- `Loyalty_Program.csv`
+- `Store_Locations.csv`
+- `Churn_Labelled_Customers.csv`
 
-- Customer_Demographics.csv  
-- Customer_Transactions.csv  
-- Loyalty_Program.csv  
-- Store_Locations.csv  
-- Churn_Labelled_Customers.csv  
-
-Data cleaning and transformation were performed using Power Query.  
-Relationships were established between tables to enable cross-table analysis.
-
----
-
-## 🔎 Key Analysis Performed
-
-### 1️⃣ Data Preparation & Modeling
-- Cleaned and transformed raw CSV data using Power Query  
-- Built relationships between customer, transaction, store, and churn tables  
-- Created calculated columns and DAX measures  
-
-### 2️⃣ Retention & Churn Analysis
-- Calculated Repeat Rate and Churn Rate  
-- Analyzed churn by region, loyalty tier, income level, and sales channel  
-
-### 3️⃣ Loyalty & Promotion Insights
-- Measured % Transactions with Promotion  
-- Compared average purchase behavior (with vs without promotion)  
-- Evaluated loyalty tier purchase frequency  
-
-### 4️⃣ Store & Channel Performance
-- Analyzed average transaction amount by store type  
-- Compared retention and churn by store opening year  
-- Evaluated performance across sales channels  
-
-### 5️⃣ Customer Segmentation & CLV Analysis
-- Segmented customers into High and Low CLV groups  
-- Analyzed churn reasons  
-- Evaluated CLV trends by region and loyalty tier  
-- Examined relationship between CLV and recency behavior  
+### Key Data Fields:
+- Customer ID
+- Region
+- Income Level
+- Loyalty Tier
+- Transaction Amount
+- Promotion Applied
+- Store Type
+- Last Purchase Date
+- Churn Flag & Churn Reason
 
 ---
 
-## 📊 Key Business Insights
+## 🧠 Data Modeling
 
-- Certain loyalty tiers demonstrate higher churn probability  
-- Promotions increase transaction share but have limited impact on average purchase value  
-- Superstores show comparatively higher churn rates  
-- High CLV customers display stronger retention patterns  
-- Recency behavior is strongly associated with churn risk  
+- Star schema model
+- Fact Table: Customer Transactions
+- Dimension Tables:
+  - Customer Demographics
+  - Loyalty Program
+  - Store Locations
+  - Churn Information
+- Relationships built using Customer_ID and Store_ID
+
+---
+
+## 📊 Dashboard Pages
+
+### 1️⃣ Executive Overview
+
+**KPIs Included:**
+- Total Customers
+- Repeat Rate (%)
+- Churn Rate (%)
+
+**Insights:**
+- Churn rate segmented by Region
+- Loyalty Tier churn comparison
+- Income level impact on churn
+- Preferred channel analysis
+
+📷 ![Executive Overview](screenshots/executive_overview.png)
+
+---
+
+### 2️⃣ Loyalty & Promotion Insights
+
+**Key Analysis:**
+- % Transactions with Promotion
+- Average Purchase (Promotion vs No Promotion)
+- Purchase Frequency by Loyalty Tier
+- Points Earned vs Redeemed
+- Product Category Performance
+
+📷 ![Loyalty & Promotion Insights](screenshots/loyalty_promotion_insights.png)
+
+---
+
+### 3️⃣ Store & Channel Performance
+
+**Key Metrics:**
+- Average Transaction Amount
+- Churn Rate by Store Type
+- Retention Rate by Store Type & Opening Year
+
+📷 ![Store & Channel Performance](screenshots/store_channel_performance.png)
+
+---
+
+### 4️⃣ Customer Segmentation
+
+**Segmentation Analysis:**
+- High CLV vs Low CLV Customers
+- CLV by Region & Loyalty Tier
+- Churn Reasons Breakdown
+- CLV vs Days Since Last Purchase
+
+📷 ![Customer Segmentation](screenshots/customer_segmentation.png)
+
+---
+
+## 📈 Key Business Insights
+
+- High CLV customers show stronger retention patterns.
+- Customers with long purchase gaps have higher churn probability.
+- Superstores generate higher average transaction values.
+- Promotion usage increases transaction frequency.
+- Loyalty tier impacts overall purchase behavior and retention.
 
 ---
 
@@ -97,8 +155,16 @@ retail-customer-retention-dashboard/
 
 ---
 
-## 📌 Conclusion
+## 🚀 Conclusion
 
-This project demonstrates practical business intelligence skills including data modeling, KPI development using DAX, customer segmentation, churn analysis, and interactive dashboard design using Power BI.
+This project demonstrates practical Business Intelligence skills including:
+
+- Data modeling
+- KPI development using DAX
+- Customer segmentation
+- Churn analysis
+- Interactive dashboard design in Power BI
+
+The dashboard provides clear insights to support strategic decision-making in retail customer retention and performance optimization.
 
 ---
